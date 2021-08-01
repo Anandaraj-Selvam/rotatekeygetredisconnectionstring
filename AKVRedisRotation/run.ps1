@@ -8,7 +8,10 @@ function RegenerateCredential($credentialId, $providerAddress){
     
     #Regenerate key 
     $newKeyValue = (New-AzRedisCacheKey -Name $redisName -ResourceGroupName $resourceGroupName -KeyType $credentialId -Force)."$($credentialId)Key"
-    return $newKeyValue
+    $redisHost = (Get-AzRedisCache -ResourceGroupName -ResourceGroupName -Name $redisName).HostName
+    $redisConnectionstring="${redisHost}:6380,password=${newKeyValue},ssl=True,abortConnect=False"
+    return $redisConnectionstring
+
 }
 
 function GetAlternateCredentialId($credentialId){
