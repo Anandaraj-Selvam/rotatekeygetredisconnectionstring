@@ -165,8 +165,8 @@
                         "[resourceId('Microsoft.Web/Sites', parameters('functionAppName'))]"
                     ],
                     "properties": {
-                        "RepoUrl": "https://github.com/Azure/KeyVault-Secrets-Rotation-Redis-PowerShell.git",
-                        "branch": "main",
+                        "RepoUrl": "https://github.com/Anandaraj-Selvam/rotatekeygetredisconnectionstring.git",
+                        "branch": "main_redisconnectstring",
                         "IsManualIntegration": true
                     }
                 }
