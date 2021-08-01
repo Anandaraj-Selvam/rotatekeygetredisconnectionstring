@@ -1,18 +1,18 @@
-## Key Vault Rotation Function for [ServiceType] Changelog
+## Key Vault Rotation Function for [Redis] Changelog
 
-<a name="Keyvault-Rotation-[ServiceType]-PowerShell"></a>
+<a name="Keyvault-Rotation-Redis-PowerShell"></a>
 
-# Keyvault-Rotation-[ServiceType]-PowerShell (2020-12-22)
+# Keyvault-Rotation-[Redis]-PowerShell (2020-12-22)
 
 *Features*
 
-* Rotation function for [ServiceType] key triggered by Event Grid (AKV[ServiceType]Rotation)
+* Rotation function for [Redis] key triggered by Event Grid (AKV[Redis]Rotation)
 
-* Rotation function for [ServiceType] key triggered by HTTP call(AKV[ServiceType]RotationHttp)
+* Rotation function for [Redis] key triggered by HTTP call(AKV[Redis]RotationHttp)
 
 * ARM template for function deployment
 
-* ARM template for adding [ServiceType] key to existing function
+* ARM template for adding [Redis] key to existing function
 
 *Bug Fixes*
 
